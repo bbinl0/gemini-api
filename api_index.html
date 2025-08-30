@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini API</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 2em;
+        }
+        h1 {
+            color: #1a73e8;
+        }
+        h2 {
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 0.5em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 1em;
+        }
+        code {
+            background-color: #e0e0e0;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gemini API</h1>
+    <a href="/chat" style="font-size: 1.2em; display: block; margin-bottom: 1em;">Start Chatting</a>
+    <h2>Available Models:</h2>
+    <ul>
+        <li><strong>Gemini 2.5 Pro (Standard)</strong><br>- সর্বাধিক শক্তিশালী এবং বহুমুখী মডেল। জটিল যুক্তি, কোডিং এবং মাল্টিমোডাল কাজের জন্য উপযুক্ত।</li>
+        <li><strong>Gemini 2.5 Flash (Fastest)</strong><br>- দ্রুত এবং সাশ্রয়ী মডেল। দ্রুত প্রতিক্রিয়া প্রয়োজন এমন কাজের জন্য আদর্শ।</li>
+        <li><strong>Gemini 2.5 Flash Lite (Fastest)</strong><br>- সবচেয়ে হালকা এবং সম্ভবত দ্রুততম মডেল। অত্যন্ত দ্রুত প্রতিক্রিয়া প্রয়োজন এমন ক্ষুদ্র কাজের জন্য।</li>
+        <li><strong>Gemini Live 2.5 Flash Preview (Fast)</strong><br>- লাইভ ইন্টারেকশন বা রিয়েল-টাইম ব্যবহারের জন্য দ্রুত মডেলের প্রাকদর্শন।</li>
+        <li><strong>Gemini 2.5 Flash Native Audio (Fast)</strong><br>- অডিও ভিত্তিক ডায়ালগ বা কথোপকথনের জন্য বিশেষায়িত দ্রুত মডেল।</li>
+        <li><strong>Gemini 2.5 Flash Audio (Experimental) (Fast)</strong><br>- অডিও এবং থিঙ্কিং ডায়ালগের জন্য একটি পরীক্ষামূলক মডেল।</li>
+        <li><strong>Gemini 2.5 Flash Image Preview (Fast)</strong><br>- ইমেজ ভিত্তিক কাজের জন্য দ্রুত মডেলের প্রাকদর্শন।</li>
+        <li><strong>Gemini 2.5 Flash TTS (Fast)</strong><br>- টেক্সট-টু-স্পিচ (TTS) প্রিভিউয়ের জন্য দ্রুত মডেল।</li>
+        <li><strong>Gemini 2.5 Pro TTS (Standard)</strong><br>- টেক্সট-টু-স্পিচ (TTS) প্রিভিউয়ের জন্য শক্তিশালী মডেল।</li>
+        <li><strong>Gemini 2.0 Flash (Fast)</strong><br>- দ্রুত এবং সাশ্রয়ী মডেলের পূর্ববর্তী সংস্করণ।</li>
+        <li><strong>Gemini 2.0 Flash Image Gen (Fast)</strong><br>- ইমেজ তৈরির জন্য দ্রুত মডেলের প্রাকদর্শন।</li>
+        <li><strong>Gemini 2.0 Flash Lite (Fastest)</strong><br>- দ্রুততম মডেলের পূর্ববর্তী সংস্করণ।</li>
+        <li><strong>Gemini 2.0 Flash Live (Fast)</strong><br>- লাইভ ইন্টারেকশনের জন্য দ্রুত মডেলের পূর্ববর্তী সংস্করণ।</li>
+        <li><strong>Gemini 1.5 Flash (Fastest)</strong><br>- বর্তমানে উপলব্ধ সবচেয়ে দ্রুত এবং দক্ষ মডেল।</li>
+        <li><strong>Gemini 1.5 Flash 8B (Fast)</strong><br>- আলাদা প্যারামিটার সহ একটি হালকা মডেল।</li>
+        <li><strong>Gemini 1.5 Pro (Standard)</strong><br>- বর্তমানে উপলব্ধ সবচেয়ে শক্তিশালী এবং বহুমুখী মডেল।</li>
+    </ul>
+    <h2>Example Usage:</h2>
+    <p>To use the gemini-2.5-pro model with the prompt "Hello world", send a POST request to the following URL:</p>
+    <code>https://gemini-api-silk-two.vercel.app/generate/gemini-2.5-pro</code>
+    <p>The request body should be a JSON object with the following structure:</p>
+    <pre><code>{
+    "prompt": "Hello world",
+    "history": []
+}</code></pre>
+</body>
+</html>
